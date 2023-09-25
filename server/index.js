@@ -18,6 +18,8 @@ app.post("/register", (req, res) => {
     .catch(err => console.log(err))
 })
 
+
+
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
   EmployeeModel.findOne({ email, password })
